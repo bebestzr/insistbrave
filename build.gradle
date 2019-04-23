@@ -3,54 +3,12 @@ group 'com.insistbrave'
 //war包版本
 version '1.0-SNAPSHOT'
 
-
-//groovy依赖
-apply plugin: 'groovy'
-
-//groovy依赖
-apply plugin: 'java'
-
-//这个依赖必须有，不然会报错
-apply plugin: 'war'
-
-//必须有 SpringBootServletInitializer需要 springboot 依赖
-apply plugin: 'org.springframework.boot'
-
-
-//指定编译器编译.java文件的jdk版本
-sourceCompatibility = 1.8
-
-//maven仓库地址 （必须有）
-repositories {
-    mavenCentral()
-}
-
-dependencies {
-    //springboot相关jar
-    compile('org.springframework.boot:spring-boot-starter-web')
-    providedCompile('org.springframework.boot:spring-boot-starter-tomcat')
-    compile('org.springframework.boot:spring-boot-starter-freemarker')
-    compile group: 'org.springframework.boot', name: 'spring-boot-starter-redis', version: '1.4.7.RELEASE'
-
-    //groovy版本
-    compile 'org.codehaus.groovy:groovy-all:2.3.11'
-
-    //测试依赖包
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-    testCompile "org.springframework.boot:spring-boot-starter-test"
-
-}
-
 buildscript {
-
-    //springboot 版本号
-    ext{
-        springbootVersion = '1.5.2.RELEASE'
-    }
 
     //maven仓库地址
     repositories {
-        mavenCentral()
+        maven{ url "${nexusUrl}/content/groups/public/"}
+        maven{ url "http://repo.spring.io/libs-release"}
     }
 
     //springboot 依赖
@@ -58,3 +16,86 @@ buildscript {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE")
     }
 }
+
+//这个依赖必须有，不然会报错
+apply plugin: 'war'
+
+//指定编译器编译.java文件的jdk版本
+sourceCompatibility = 1.8
+
+allprojects {
+
+    ext{
+        CYBERTRANS_VERSION = '2.5.88'
+    }
+
+    //groovy依赖
+    apply plugin: 'groovy'
+
+    //java依赖
+    apply plugin: 'java'
+
+    //idea依赖
+    //apply plugin: 'idea'
+
+    //必须有 SpringBootServletInitializer需要 springboot 依赖
+    apply plugin: 'org.springframework.boot'
+
+    //maven 依赖
+    apply plugin: 'maven'
+
+
+    repositories {
+        maven{ url "${nexusUrl}/content/groups/public/"}
+        maven{ url "http://repo.spring.io/libs-release"}
+    }
+
+    uploadArchives{
+        repositories {
+            mavenDeployer{
+                repository(url: "${nexusUrl}/content/groups/public/"){
+                    authentication(userName: nexusUsername, password: nexusPassword)
+                }
+                snapshotRepository(url: "${nexusUrl}/content/repositories/snapshots"){
+                    authentication(userName: nexusUsername, password: nexusPassword)
+                }
+
+            }
+        }
+    }
+
+    dependencies {
+
+        //springboot相关jar
+        compile('org.springframework.boot:spring-boot-starter-web')
+        compile "org.springframework.boot:spring-boot-starter-web"
+        compile('org.springframework.boot:spring-boot-starter-freemarker')
+        compile group: 'org.springframework.boot', name: 'spring-boot-starter-redis', version: '1.4.7.RELEASE'
+        //cbt相关jar
+        compile group: "com.ittx", name: "cbt-core", version: CYBERTRANS_VERSION, changing: true
+        compile group: "com.ittx", name: "cbt-ais", version: CYBERTRANS_VERSION, changing: true
+        //groovy版本
+        compile 'org.codehaus.groovy:groovy-all:2.3.11'
+
+        //测试依赖包
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+        testCompile "org.springframework.boot:spring-boot-starter-test"
+    }
+dependencies{
+    compile project(":insistbrave-api")
+    compile project(":insistbrave-general")
+    compile project(":insistbrave-shipment")
+    compile project(":insistbrave-master")
+    compile project(":insistbrave-receipt")
+    compile project(":insistbrave-order")
+}
+
+
+
+}
+
+
+
+
+
+

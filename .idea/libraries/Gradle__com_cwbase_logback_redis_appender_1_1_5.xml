@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.cwbase:logback-redis-appender:1.1.5">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cwbase/logback-redis-appender/1.1.5/b5063316f721835f9b2530c99788ddcc3991f759/logback-redis-appender-1.1.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.cwbase/logback-redis-appender/1.1.5/e524af0c265c4d7c76a27b8b51eb65e516eda3f4/logback-redis-appender-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,6 @@
+dependencies{
+    compile project(":insistbrave-general")
+    compile project(":insistbrave-shipment")
+    compile project(":insistbrave-receipt")
+    compile project(":insistbrave-order")
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/insistbrave.iml" filepath="$PROJECT_DIR$/insistbrave.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-api.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-api.iml" group="insistbrave-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-api/insistbrave-api_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-api/insistbrave-api_main.iml" group="insistbrave-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-api/insistbrave-api_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-api/insistbrave-api_test.iml" group="insistbrave-api" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-general.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-general.iml" group="insistbrave-general" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-general/insistbrave-general_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-general/insistbrave-general_main.iml" group="insistbrave-general" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-general/insistbrave-general_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-general/insistbrave-general_test.iml" group="insistbrave-general" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-master.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-master.iml" group="insistbrave-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-master/insistbrave-master_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-master/insistbrave-master_main.iml" group="insistbrave-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-master/insistbrave-master_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-master/insistbrave-master_test.iml" group="insistbrave-master" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-order.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-order.iml" group="insistbrave-order" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-order/insistbrave-order_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-order/insistbrave-order_main.iml" group="insistbrave-order" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-order/insistbrave-order_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-order/insistbrave-order_test.iml" group="insistbrave-order" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-receipt.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-receipt.iml" group="insistbrave-receipt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-receipt/insistbrave-receipt_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-receipt/insistbrave-receipt_main.iml" group="insistbrave-receipt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-receipt/insistbrave-receipt_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-receipt/insistbrave-receipt_test.iml" group="insistbrave-receipt" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-shipment.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-shipment.iml" group="insistbrave-shipment" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-shipment/insistbrave-shipment_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-shipment/insistbrave-shipment_main.iml" group="insistbrave-shipment" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave-shipment/insistbrave-shipment_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave-shipment/insistbrave-shipment_test.iml" group="insistbrave-shipment" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave_main.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave_main.iml" group="insistbrave" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/insistbrave_test.iml" filepath="$PROJECT_DIR$/.idea/modules/insistbrave_test.iml" group="insistbrave" />
+    </modules>
+  </component>
+</project>

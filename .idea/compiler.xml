@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="ibe-general_main" target="1.8" />
+      <module name="ibe-general_test" target="1.8" />
+      <module name="insistbrave-api_main" target="1.8" />
+      <module name="insistbrave-api_test" target="1.8" />
+      <module name="insistbrave-general_main" target="1.8" />
+      <module name="insistbrave-general_test" target="1.8" />
+      <module name="insistbrave-master_main" target="1.8" />
+      <module name="insistbrave-master_test" target="1.8" />
+      <module name="insistbrave-order_main" target="1.8" />
+      <module name="insistbrave-order_test" target="1.8" />
+      <module name="insistbrave-receipt_main" target="1.8" />
+      <module name="insistbrave-receipt_test" target="1.8" />
+      <module name="insistbrave-shipment_main" target="1.8" />
+      <module name="insistbrave-shipment_test" target="1.8" />
+      <module name="insistbrave_main" target="1.8" />
+      <module name="insistbrave_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

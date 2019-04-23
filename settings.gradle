@@ -1,2 +1,10 @@
 rootProject.name = 'insistbrave'
+include 'insistbrave-api'
+include 'insistbrave-general'
+include 'insistbrave-shipment'
+include 'insistbrave-master'
+include 'insistbrave-order'
+include 'insistbrave-receipt'
+
+
 
