@@ -1,0 +1,7 @@
+#使用的配置文件
+spring.profiles.active: dev
+
+#tomcat端口号
+server.port: 8888
+
+
